@@ -1,4 +1,4 @@
-<h1 align="center">Instruções de uso para o Frontend</h1>
+<h1 align="center">Instruções de uso para a aplicação web</h1>
  
 <p>Primeiramente você vai precisar instalar as dependencias do projeto</p>
 <p>Abra a pasta do projeto Proffy, abra a pasta web no terminal</p>
