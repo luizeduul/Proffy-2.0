@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TextInput } from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { useFocusEffect } from '@react-navigation/native';
+import { Picker } from '@react-native-community/picker';
 import { Feather } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -12,7 +13,6 @@ import TeacherItem, { Teacher } from '../../components/TeacherItem';
 
 import styles from './styles';
 
-
 const TeacherList = () => {
   const [teachers, setTeachers] = useState([]);
   const [favorites, setFavorites] = useState<number[]>([]);
@@ -20,8 +20,39 @@ const TeacherList = () => {
   const [isFiltersVisible, setIsFiltersVisible] = useState(false);
 
   const [subject, setSubject] = useState('');
-  const [week_day, setWeekDay] = useState('');
+  const [week_day, setWeekDay] = useState<number>(0);
   const [time, setTime] = useState('');
+
+  const dayList = [
+    {
+      key: '0',
+      label: 'Domingo'
+    },
+    {
+      key: '1',
+      label: 'Segunda-Feira'
+    },
+    {
+      key: '2',
+      label: 'Terça-Feira'
+    },
+    {
+      key: '3',
+      label: 'Quarta-Feira'
+    },
+    {
+      key: '4',
+      label: 'Quinta-Feira'
+    },
+    {
+      key: '5',
+      label: 'Sexta-Feira'
+    },
+    {
+      key: '6',
+      label: 'Sábado'
+    }
+  ]
 
   function loadFavorites() {
     AsyncStorage.getItem('favorites').then(response => {
@@ -30,8 +61,7 @@ const TeacherList = () => {
         const favoritedTeacherIds = favoritedTeachers.map((teacher: Teacher) => {
           return teacher.id;
         });
-
-        setFavorites(favoritedTeacherIds)
+        setFavorites(favoritedTeacherIds);
       }
     });
   }
@@ -81,13 +111,19 @@ const TeacherList = () => {
             <View style={styles.inputGroup}>
               <View style={styles.inputBlock}>
                 <Text style={styles.label}>Dia da semana</Text>
-                <TextInput
-                  style={styles.input}
-                  placeholder="Qual o dia?"
-                  placeholderTextColor="#C1BCCC"
-                  value={week_day}
-                  onChangeText={text => setWeekDay(text)}
-                />
+                <Picker
+                  selectedValue={week_day}
+                  onValueChange={(v) => setWeekDay(v) /*issue*/}
+                  prompt="Selecione o dia"
+                  mode="dialog"
+                  style={[styles.input]}
+                >
+                  {dayList.map(day => {
+                    return (
+                      <Picker.Item key={day.key} label={day.label} value={day.key} />
+                    )
+                  })}
+                </Picker>
               </View>
               <View style={styles.inputBlock}>
                 <Text style={styles.label}>Horário</Text>
@@ -125,7 +161,6 @@ const TeacherList = () => {
           );
         })}
       </ScrollView>
-
     </View>
   );
 }
