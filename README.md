@@ -1,5 +1,5 @@
 <h1 align="center">
-  Proffy
+    <img alt="Proffy" src="https://ik.imagekit.io/8qmbx6p1dq/Proffy/logo_r8TSagBhF.png" width="250px" />
 </h1>
 
 <p align="center">
@@ -7,7 +7,7 @@
  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/luizeduul/Proffy">
  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
-<p>Projeto sendo desenvolvido durante a Next Level Week 2.0 da Rocketseat 🚀</p>
+<p>Projeto desenvolvido durante a Next Level Week 2.0 da Rocketseat 🚀.</p>
 
 ## Índice
 - [Descrição](#descrição)
@@ -18,7 +18,9 @@
 ---
 
 ## Descrição
-Comming soon
+
+<p>O projeto Proffy tem por objetivo, conectar pessoas que precisam de aulas em alguma disciplina e professores que querem dar aulas. A princípio a versão 1.0 há um cadastro de professores com disponibilidade de horários e valores cobrados. E os usuários tem a opção de clicar no botão estudar e realizar uma busca pelas matérias e horários desejados, sendo exibido uma listagem com os professores disponíveis e um botão para entrar em contato via whatsapp.</p>
+<p>Esse projeto foi criado para de alguma forma homenagear o dia do profissional de educação <strong>06 de agosto</strong> e ajudar no aprendizado como desenvolvedor.</p>
 
 ---
 
