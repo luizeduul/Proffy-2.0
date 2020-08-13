@@ -19,7 +19,7 @@
 
 ## Descrição
 
-<p>O projeto Proffy tem por objetivo, conectar pessoas que precisam de aulas em alguma disciplina e professores que querem dar aulas. A princípio a versão 1.0 há um cadastro de professores com disponibilidade de horários e valores cobrados. E os usuários tem a opção de clicar no botão estudar e realizar uma busca pelas matérias e horários desejados, sendo exibido uma listagem com os professores disponíveis e um botão para entrar em contato via whatsapp.</p>
+<p>O projeto Proffy tem por objetivo, conectar pessoas que precisam de aulas em alguma disciplina e professores que querem dar aulas. A princípio na versão 1.0 existe um cadastro de professores com disponibilidade de horários e valores cobrados. E os usuários (alunos) tem a opção de clicar no botão estudar e realizar uma busca pelas matérias e horários desejados, sendo exibido uma listagem com os professores disponíveis e um botão para entrar em contato via whatsapp.</p>
 <p>Esse projeto foi criado para de alguma forma homenagear o dia do profissional de educação <strong>06 de agosto</strong> e ajudar no aprendizado como desenvolvedor.</p>
 
 ---
