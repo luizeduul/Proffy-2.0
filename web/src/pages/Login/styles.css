@@ -1,0 +1,141 @@
+#page-login {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-login-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+#logo-container {
+    height: 23rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 7rem 8.5rem;
+}
+
+#logo-container img {
+    width: 20rem;
+}
+
+#logo-container p {
+    color: var(--color-text-in-primary);
+}
+
+main {
+    display: flex;
+    background: var(--color-background-second);
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6rem;
+}
+
+::placeholder {
+    color: var(--color-text-complement);
+    font-size: 2rem;
+}
+
+main .title {
+    color: var(--color-text-title);
+    font-size: 1.25rem;
+    align-self: flex-start;
+    padding-left: 4.8rem;
+}
+
+main fieldset {
+    border: none;
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+
+main button {
+    width: 78%;
+    height: 5.6rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-secundary-dark);
+    background: var(--color-secundary);
+    margin-top: 3.6rem;
+    font: 600 1.8rem Archivo;
+    line-height: 2.8rem;
+    color: var(--color-title-in-primary);
+    text-align: center;
+}
+
+main button:hover {
+    background: var(--color-secundary-dark);
+}
+
+main .remember-container {
+    font: 400 1.6rem Poppins;
+    line-height: 2.6rem;
+    padding-top: 1.5rem;
+}
+
+main .remember-container label {
+    padding-right: 4rem;
+    padding-left: 0.8rem;
+    color: var(--color-text-complement);
+}
+
+main .remember-container a {
+    color: var(--color-primary-darker);
+}
+
+main .remember-container input {
+    background-image: var(--color-secundary);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+}
+
+footer div p {
+    font: 400 1.4rem Poppins;
+    line-height: 2.4rem;
+    color: var(--color-text-base);
+}
+
+footer div a {
+    font: 600 1.4rem Poppins;
+    color: var(--color-primary-darker);
+}
+
+footer span {
+    margin-top: -2.5rem;
+    font: 400 1.40rem Poppins;
+    line-height: 2.0rem;
+    text-align: right;
+    color: var(--color-text-complement);
+    align-items: center;
+}
+
+@media (min-width: 1100px) {
+    #page-login {
+        width: 100%;
+        align-items: center;
+    }
+    #page-login-content {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: auto;
+    }
+    #logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    #logo-container img {
+        width: 30rem;
+    }
+    main{
+        margin-top: 15rem;
+        
+    }
+}
