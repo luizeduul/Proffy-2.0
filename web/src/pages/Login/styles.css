@@ -9,21 +9,6 @@
     width: 100%;
 }
 
-#logo-container {
-    height: 23rem;
-    width: 100%;
-    background-color: var(--color-primary);
-    padding: 7rem 8.5rem;
-}
-
-#logo-container img {
-    width: 20rem;
-}
-
-#logo-container p {
-    color: var(--color-text-in-primary);
-}
-
 main {
     display: flex;
     background: var(--color-background-second);
@@ -39,7 +24,7 @@ main {
 
 main .title {
     color: var(--color-text-title);
-    font-size: 1.25rem;
+    font: 600 1.25rem Poppins;
     align-self: flex-start;
     padding-left: 4.8rem;
 }
@@ -60,6 +45,7 @@ main button {
     font: 600 1.8rem Archivo;
     line-height: 2.8rem;
     color: var(--color-title-in-primary);
+    cursor: pointer;
     text-align: center;
 }
 
@@ -124,18 +110,26 @@ footer span {
         grid-template-columns: 100% 100%;
         grid-template-rows: auto;
     }
-    #logo-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+    main {
+        margin: 16rem auto;
+        padding-left: 12rem;
     }
-    #logo-container img {
-        width: 30rem;
+    main .title {
+        padding-left: 6rem;
     }
-    main{
-        margin-top: 15rem;
-        
+    main .remember-container label {
+        margin-right: 12rem;
+    }
+    footer {
+        justify-content: space-evenly;
+        margin-top: -8rem;
+        padding-left: 6rem;
+    }
+    footer div p {
+        margin-right: 14rem;
+        padding-left: 6rem;
+    }
+    footer div a {
+        margin-left: 6rem;
     }
 }

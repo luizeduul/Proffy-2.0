@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
+import LogoComponent from '../../components/LogoComponent';
+import Register from '../Register';
 
-import logoImg from '../../assets/images/logo.svg';
 import heartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
@@ -11,10 +13,7 @@ function Login() {
   return (
     <div id="page-login">
       <div id="page-login-content" className="container">
-        <div id="logo-container">
-          <img src={logoImg} alt="Logo" />
-          <p>Sua plataforma de <br /> estudos online</p>
-        </div>
+        <LogoComponent />
         <div className="page-login-main">
           <main>
             <div className="title">
@@ -44,7 +43,7 @@ function Login() {
           <footer>
             <div>
               <p>Não tem uma conta?</p>
-              <a href="">Cadastre-se</a>
+              <Link to="/register">Cadastre-se</Link>
             </div>
             <span>É de graça <img src={heartIcon} alt="heart icon" /></span>
           </footer>
