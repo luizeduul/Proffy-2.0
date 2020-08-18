@@ -1,19 +1,19 @@
-#page-register {
+#page-forgot {
     width: 100vw;
     height: 100vh;
 }
 
-#page-register-content {
+#page-forgot-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 100%;
 }
 
-.page-register-main {
-    margin-top: -10rem;
+.page-forgot-main {
+    margin-top: -2.4rem;
 }
 
-.page-register-main main {
+.page-forgot-main main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,36 +24,39 @@
     font-size: 2rem;
 }
 
-.page-register-main main>div {
+.page-forgot-main main>div {
     text-align: left;
     font: 600 1.25rem Poppins;
-    margin-left: -14rem;
+    margin-left: -4rem;
 }
 
-.page-register-main main>div p {
+.page-forgot-main main>div h1{
+    color: var(--color-text-title);
+    margin-top: 2rem;
+} 
+
+.page-forgot-main main>div p{
     color: var(--color-text-base);
     font-size: 1.2rem;
     font-weight: 400;
-}
+    margin-top: 1.3rem;
+} 
 
-.page-register-main main>div h1 {
-    color: var(--color-text-title);
-}
-
-.page-register-main main .button-back {
-    padding-top: 1.0rem;
+.page-forgot-main main .button-back {
     margin-left: -24rem;
 }
 
-.page-register-main main fieldset {
+.page-forgot-main main fieldset {
     border: none;
     width: 80%;
+    margin: 2rem auto;
 }
 
-.page-register-main main button {
+.page-forgot-main main button {
     width: 80%;
     height: 5.6rem;
     border-radius: 0.8rem;
+    margin-top: 1.5rem;
     border: 1px solid var(--color-secundary-dark);
     background: var(--color-secundary);
     font: 600 1.8rem Archivo;
@@ -61,10 +64,9 @@
     color: var(--color-title-in-primary);
     text-align: center;
     cursor: pointer;
-    margin-top: -0.6rem;
 }
 
-.page-register-main main button:hover {
+.page-forgot-main main button:hover {
     background: var(--color-secundary-dark);
 }
 
@@ -73,43 +75,47 @@
 }
 
 @media(min-width: 1100px) {
-    #page-register {
+    #page-forgot {
         width: 100%;
         align-items: center;
     }
-    #page-register-content {
+    #page-forgot-content {
         display: grid;
         grid-template-columns: 100% 100%;
         grid-template-rows: auto;
     }
-    .button-back {
+    .button-back{
         margin-top: -7rem;
         margin-bottom: 11rem;
     }
-    .page-register-main {
+    .page-forgot-main {
         margin-top: 3rem;
-        margin-right: -1rem;
     }
-    .page-register-main main {
+    .page-forgot-main main {
         margin: 7rem auto;
         padding-left: 8rem;
     }
-    .page-register-main main>div {
+    .page-forgot-main main>div {
         text-align: left;
         margin-left: -32rem;
     }
-    .page-register-main main>div p {
-        font-size: 1.3rem;
-    }
-    .page-register-main main>div h1 {
+    .page-forgot-main main>div h1{
+        margin-left: 22.5rem;
         font-size: 3.3rem;
+    } 
+    .page-forgot-main main>div p{
+        margin-left: 22.5rem;
+        font-size: 1.3rem;
+    }   
+    .page-forgot-main main .button-back {
+        margin-left: -30rem;
     }
-    .page-register-main main .button-back {
-        margin-left: -41.3rem;
-    }
-    .page-register-main main fieldset {
+    .page-forgot-main main fieldset {
         border: none;
-        width: 80%;
+        width: 60%;
+    }
+    .page-forgot-main main button {
+        width: 60%;
     }
     #show-logo-web {
         display: inherit;

@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-main {
+.page-login-main main {
     display: flex;
     background: var(--color-background-second);
     flex-direction: column;
@@ -22,21 +22,25 @@ main {
     font-size: 2rem;
 }
 
-main .title {
+.page-login-main main .title {
     color: var(--color-text-title);
     font: 600 1.25rem Poppins;
     align-self: flex-start;
     padding-left: 4.8rem;
+    margin-top: -2rem;
 }
 
-main fieldset {
+.page-login-main main fieldset {
     border: none;
     width: 80%;
     margin-bottom: 2.5rem;
 }
 
-main button {
-    width: 78%;
+.page-login-main main #buttonSignin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: 5.6rem;
     border-radius: 0.8rem;
     border: 1px solid var(--color-secundary-dark);
@@ -46,52 +50,54 @@ main button {
     line-height: 2.8rem;
     color: var(--color-title-in-primary);
     cursor: pointer;
-    text-align: center;
+    transition: background-color 0.2s;
+    text-decoration: none;
 }
 
-main button:hover {
+.page-login-main main button:hover {
     background: var(--color-secundary-dark);
 }
 
-main .remember-container {
-    font: 400 1.6rem Poppins;
+.page-login-main main .remember-container {
+    font: 400 1.3rem Poppins;
     line-height: 2.6rem;
     padding-top: 1.5rem;
 }
 
-main .remember-container label {
+.page-login-main main .remember-container label {
     padding-right: 4rem;
     padding-left: 0.8rem;
     color: var(--color-text-complement);
 }
 
-main .remember-container a {
-    color: var(--color-primary-darker);
+.page-login-main main .remember-container .buttonForget {
+    color: var(--color-text-complement);
+    text-decoration: none;
 }
 
-main .remember-container input {
+.page-login-main main .remember-container input {
     background-image: var(--color-secundary);
 }
 
-footer {
+.page-login-main footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
-footer div p {
+.page-login-main footer div p {
     font: 400 1.4rem Poppins;
     line-height: 2.4rem;
     color: var(--color-text-base);
 }
 
-footer div a {
+.page-login-main footer div a {
     font: 600 1.4rem Poppins;
     color: var(--color-primary-darker);
 }
 
-footer span {
+.page-login-main footer span {
     margin-top: -2.5rem;
     font: 400 1.40rem Poppins;
     line-height: 2.0rem;
@@ -110,26 +116,36 @@ footer span {
         grid-template-columns: 100% 100%;
         grid-template-rows: auto;
     }
-    main {
+    .page-login-main main {
         margin: 16rem auto;
         padding-left: 12rem;
     }
-    main .title {
-        padding-left: 6rem;
+    .page-login-main main .title {
+        margin-left: 1.4rem;
     }
-    main .remember-container label {
+    .page-login-main main .title h1{
+        font-size: 3.3rem;
+    }
+    .page-login-main main .remember-container {
+        margin-left: 0rem;
+        font-size: 1.6rem;
+    }
+    .page-login-main main .remember-container label {
         margin-right: 12rem;
     }
-    footer {
+    .page-login-main main .remember-container .buttonForget{
+        margin-left: -2rem;
+    }
+    .page-login-main footer {
         justify-content: space-evenly;
-        margin-top: -8rem;
-        padding-left: 6rem;
+        margin-top: -6rem;
+        padding-left: 10rem;
     }
-    footer div p {
+    .page-login-main footer div p {
         margin-right: 14rem;
-        padding-left: 6rem;
+        padding-left: 1rem;
     }
-    footer div a {
-        margin-left: 6rem;
+    .page-login-main footer div a {
+        margin-left: 1rem;
     }
 }

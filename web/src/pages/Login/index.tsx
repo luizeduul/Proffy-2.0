@@ -34,11 +34,13 @@ function Login() {
               />
             </fieldset>
             <div className="remember-container">
-              <input type="checkbox" name="rememberCheck" id="rememberCheck"/>
+              <input type="checkbox" name="rememberCheck" id="rememberCheck" />
               <label>Lembrar-me</label>
-              <a href="">Esqueci minha senha</a>
+              <Link to="/forget" className="buttonForget" style={{ textDecoration: "none" }}>Esqueci minha senha</Link>
             </div>
-            <button type="button">Entrar</button>
+            <Link to="/home" id="buttonSignin">
+              Entrar
+            </Link>
           </main>
           <footer>
             <div>
