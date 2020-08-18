@@ -129,5 +129,9 @@
     .total-connections{
         grid-area: total;
         justify-self: end;
+        margin-top: 6.5rem
+    }
+    .total-connections img{
+        margin-top: -8rem;
     }
 }
