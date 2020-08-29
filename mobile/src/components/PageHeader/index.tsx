@@ -11,28 +11,31 @@ import styles from './styles';
 interface PageHeaderProps {
   title: string;
   headerRight?: ReactNode;
+  pageTitle?: string;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, children, headerRight }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ title, children, headerRight, pageTitle }) => {
   const { navigate } = useNavigation()
   function handleGoBack() {
     navigate('Landing');
   }
   return (
-    <View style={styles.container}>
+    <>
       <View style={styles.topBar}>
         <BorderlessButton onPress={handleGoBack}>
           <Image source={backIcon} resizeMode="contain" />
         </BorderlessButton>
+        <Text style={styles.pageTitle}>{pageTitle}</Text>
         <Image source={logoImage} resizeMode="contain" />
       </View>
-      <View style={styles.header}>
-        <Text style={styles.title}>{title}</Text>
-        {headerRight}
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.title}>{title}</Text>
+          {headerRight}
+        </View>
+        {children}
       </View>
-
-      {children}
-    </View>
+    </>
   );
 }
 

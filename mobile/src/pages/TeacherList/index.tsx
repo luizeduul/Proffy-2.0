@@ -92,6 +92,7 @@ const TeacherList = () => {
     <View style={styles.container}>
       <PageHeader
         title="Proffys disponíveis"
+        pageTitle="Estudar"
         headerRight={(
           <BorderlessButton onPress={handleToogleFiltersVisible}>
             <Feather name="filter" size={20} color="#FFF" />

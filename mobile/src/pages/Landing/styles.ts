@@ -3,29 +3,60 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#8257E5',
-        justifyContent: "center",
+        backgroundColor: '#F0F0F7',
+        justifyContent: 'center',
         padding: 40,
+    },
+    profileHeader: {
+        backgroundColor: '#8257E5',
+        height: 340,
+        padding: 40
+    },
+    profile: {
+        flexDirection: "row",
+        alignItems: 'center',
+        top: 30,
+    },
+    imageProfile: {
+        width: 50,
+        height: 50,
+        resizeMode: 'cover',
+        borderRadius: 100
+    },
+    textProfileName: {
+        fontFamily: 'Poppins_500Medium',
+        color: '#D4C2FF',
+        fontSize: 12,
+        lineHeight: 22,
+        paddingLeft: 16,
+    },
+    logoutButton: {
+        width: 40,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginLeft: '38%',
+        backgroundColor: '#774DD6',
+        borderRadius: 8,
     },
     banner: {
         width: '100%',
-        resizeMode: "contain",
-
+        resizeMode: 'contain',
+        top: 40,
     },
     title: {
         fontFamily: 'Poppins_400Regular',
-        color: '#FFF',
+        color: '#6A6180',
         fontSize: 20,
         lineHeight: 30,
-        marginTop: 80,
-
+        marginTop: 10,
     },
     titleBold: {
         fontFamily: 'Poppins_600SemiBold',
     },
     buttonsContainer: {
         flexDirection: 'row',
-        marginTop: 40,
+        marginTop: 20,
         justifyContent: 'space-between'
     },
     button: {
@@ -47,9 +78,9 @@ const styles = StyleSheet.create({
         color: '#FFF',
         fontSize: 20
     },
-    totalConnections:{
+    totalConnections: {
         fontFamily: 'Poppins_400Regular',
-        color: '#D4C2FF',
+        color: '#9C98A6',
         fontSize: 12,
         lineHeight: 20,
         maxWidth: 140,
