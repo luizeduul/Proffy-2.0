@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Image, Text } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
+
+import favoriteEmoji from '../../assets/images/icons/favorite.png';
 
 import styles from './styles';
 
@@ -29,7 +31,17 @@ const Favorites = () => {
 
   return (
     <View style={styles.container}>
-      <PageHeader title="Meus proffys favoritos" pageTitle="Favoritos"/>
+      <PageHeader
+        title="Meus proffys favoritos"
+        pageTitle="Favoritos"
+        headerRight={(
+          <View style={styles.favoriteEmojiView}>
+            <Image source={favoriteEmoji} />
+            <Text style={styles.textFavoriteProffys}>1 Favorito</Text>
+          </View>
+        )}
+      >
+      </PageHeader>
       <ScrollView
         style={styles.favoriteList}
         contentContainerStyle={{

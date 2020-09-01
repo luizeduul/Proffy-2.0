@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, TextInput } from 'react-native';
+import { View, Text, ScrollView, TextInput, Image } from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { useFocusEffect } from '@react-navigation/native';
 import { Picker } from '@react-native-community/picker';
@@ -10,6 +10,8 @@ import api from '../../services/api';
 
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
+
+import foundEmoji from '../../assets/images/icons/foundEmoji.png';
 
 import styles from './styles';
 
@@ -94,11 +96,18 @@ const TeacherList = () => {
         title="Proffys disponíveis"
         pageTitle="Estudar"
         headerRight={(
-          <BorderlessButton onPress={handleToogleFiltersVisible}>
-            <Feather name="filter" size={20} color="#FFF" />
-          </BorderlessButton>
+          <View style={styles.foundProffysView}>
+            <Image source={foundEmoji} />
+            <Text style={styles.textFoundProffys}>1 Proffys</Text>
+          </View>
         )}
       >
+        <View style={styles.filterButton}>
+          <BorderlessButton onPress={handleToogleFiltersVisible}>
+            <Feather name="filter" size={20} color="#04D361" />
+          </BorderlessButton>
+          <Text style={styles.filterText}>Filtrar por dia, hora e matéria.</Text>
+        </View>
         {isFiltersVisible && (
           <View style={styles.searchForm}>
             <Text style={styles.label}>Matéria</Text>
@@ -144,6 +153,7 @@ const TeacherList = () => {
             </RectButton>
           </View>
         )}
+
       </PageHeader>
       <ScrollView
         style={styles.teacherList}

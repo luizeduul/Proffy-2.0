@@ -7,6 +7,17 @@ const styles = StyleSheet.create({
     },
     favoriteList: {
         marginTop: -40,
+    },
+    favoriteEmojiView: {
+        flexDirection: 'row',
+        marginTop: -20
+    },
+    textFavoriteProffys: {
+        fontFamily: 'Poppins_400Regular',
+        fontSize: 12,
+        lineHeight: 18,
+        paddingLeft: 12,
+        color: '#D4C2FF',
     }
 });
 

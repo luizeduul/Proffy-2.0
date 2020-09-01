@@ -8,8 +8,32 @@ const styles = StyleSheet.create({
     teacherList: {
         marginTop: -40,
     },
+    foundProffysView: {
+        flexDirection: 'row',
+        marginTop: -30
+    },
+    textFoundProffys: {
+        fontFamily: 'Poppins_400Regular',
+        fontSize: 12,
+        lineHeight: 18,
+        paddingLeft: 12,
+        color: '#D4C2FF',
+    },
     searchForm: {
         marginBottom: 24,
+    },
+    filterButton: {
+        flexDirection: 'row',
+        marginTop: -25,
+        marginBottom: 25
+    },
+    filterText: {
+        fontFamily: 'Poppins_400Regular',
+        alignSelf: 'center',
+        fontSize: 12,
+        lineHeight: 18,
+        paddingLeft: 12,
+        color: '#D4C2FF',
     },
     label: {
         color: '#D4C2FF',
