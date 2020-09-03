@@ -97,6 +97,7 @@ const GiveClasses = () => {
             <RectButton style={styles.buttonSave}>
               <Text style={styles.textButtonSave}>Salvar alterações</Text>
             </RectButton>
+            
           </View>
         </View>
       </ScrollView>
