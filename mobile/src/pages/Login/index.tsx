@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Image, ImageBackground, Text, CheckBox, KeyboardAvoidingView, Platform } from 'react-native';
 import { RectButton, TextInput, TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 import logo from '../../assets/images/logo.png';
 import bgImage from '../../assets/images/give-classes-background.png';
@@ -8,10 +9,18 @@ import bgImage from '../../assets/images/give-classes-background.png';
 import styles from './styles';
 
 const Login = () => {
+  const { navigate } = useNavigation();
+
+  function handleLogin() {
+    navigate('Landing');
+  }
+  function handleNavigateToForgotPassword(){
+    navigate('ForgotPassword');
+  }
   return (
     <KeyboardAvoidingView
       style={[styles.container, { flex: 1 }]}
-      behavior="padding" 
+      behavior="padding"
     >
       <View>
         <ImageBackground
@@ -43,11 +52,11 @@ const Login = () => {
       />
       <View style={styles.rememberContainer}>
         <Text style={styles.checkBox}>Lembrar-me</Text>
-        <TouchableWithoutFeedback style={styles.buttonForget}>
+        <TouchableWithoutFeedback onPress={handleNavigateToForgotPassword} style={styles.buttonForget}>
           <Text style={styles.textForgetButton}>Esqueci minha senha</Text>
         </TouchableWithoutFeedback>
       </View>
-      <RectButton style={styles.button}>
+      <RectButton onPress={handleLogin} style={styles.button}>
         <Text style={styles.buttonText}>Entrar</Text>
       </RectButton>
     </KeyboardAvoidingView>

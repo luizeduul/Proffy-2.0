@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, TouchableWithoutFeedback } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
@@ -32,6 +32,14 @@ const Landing = () => {
     navigate('Study');
   }
 
+  function handleLogout(){
+    navigate('Login');
+  }
+
+  function handleNavigateToProfilePage(){
+    navigate('Profile');
+  }
+
   return (
     <>
       <View style={styles.profileHeader}>
@@ -40,8 +48,10 @@ const Landing = () => {
             style={styles.imageProfile}
             source={{ uri: 'https://avatars3.githubusercontent.com/u/7030943?s=460&u=71fc0a7dfcf703144fd2436c3c231126581b40c1&v=4' }}
           />
-          <Text style={styles.textProfileName}>Luiz Eduardo</Text>
-          <RectButton style={styles.logoutButton}>
+          <TouchableWithoutFeedback onPress={handleNavigateToProfilePage}>
+            <Text style={styles.textProfileName}>Luiz Eduardo</Text>
+          </TouchableWithoutFeedback>
+          <RectButton onPress={handleLogout} style={styles.logoutButton}>
             <Image source={logoutIcon} />
           </RectButton>
         </View>

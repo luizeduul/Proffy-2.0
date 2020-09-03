@@ -8,8 +8,8 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 import api from '../../services/api';
 
-import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
+import PageHeader from '../../components/PageHeader';
 
 import foundEmoji from '../../assets/images/icons/foundEmoji.png';
 
@@ -153,7 +153,6 @@ const TeacherList = () => {
             </RectButton>
           </View>
         )}
-
       </PageHeader>
       <ScrollView
         style={styles.teacherList}
