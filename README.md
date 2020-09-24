@@ -7,7 +7,7 @@
  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/luizeduul/Proffy-2.0">
  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
-<p>Projeto em desenvolvimento. Desavios deixados na Next Level Week 2.0 da Rocketseat 🚀.</p>
+<p>Projeto em desenvolvimento. Desafios deixados na Next Level Week 2.0 da Rocketseat 🚀.</p>
 
 ## Índice
 - [Descrição](#descrição)
