@@ -29,7 +29,7 @@
 <p>
   <a href="https://github.com/luizeduul/Proffy-2.0/tree/master/backend" target="_blank" rel="noopener noreferrer">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/luizeduul/Proffy-2.0/tree/master/web" target="_blank" rel="noopener noreferrer">Web</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/luizeduul/Proffy-2.0/tree/master/mobile" target="_blank" rel="noopener noreferrer">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/luizeduul/Proffy-2.0/tree/master/mobile" target="_blank" rel="noopener noreferrer">Mobile</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 ---
